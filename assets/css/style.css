@@ -3,14 +3,19 @@
     font-family: "Lato";
     src: url(../font/Lato-Regular.ttf);
   }
-  
+
 *{
     font-family:"Lato";
-    /* margin: 0;
-    padding: 0; */
+    margin: 0;
+    padding: 1rem;  
+    padding: 0;
     box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    list-style-type: none;
+    text-align: center;
   }
-  
+
 
 
   .desktopmenuHeader{
@@ -27,7 +32,17 @@
     display: flex;
     justify-content: space-between;
     transition: all 0.5s;
-  
+    padding: 0;
+}
+.mobileremove{
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    color: #fff;
+    align-items: center;
+}
+.mobileremove li{
+padding: 1rem;
 }
 .imgla{
     display: flex;
@@ -37,9 +52,38 @@
     background-repeat:no-repeat ;
     background-size: cover;
     color: white;
-    align-items: flex-end;
     justify-content: center;
-    text-align: center;
+    flex-direction: column;
+}
+.placesrestantes{
+    display: flex;
+    flex-direction: column;
+}
+.soldout{
+    float: right;
+}
+.number{
+    float: right;
+
+}
+#tourdates ul{
+background-color: rgb(255, 255, 255);
+color: black;
+display: flex;
+}
+
+
+
+
+.txtmobile{
+    margin-top: 10rem;
+display: flex;
+justify-content: center;
+}
+.txtmobile2{
+    margin-top: 1rem;
+display: flex;
+justify-content: center;
 }
 .alltheband{
     display: flex;
@@ -51,8 +95,30 @@
 .emplacements{
     background-color: white;
     color: black;
-    width: fit-content;
 }
+.form input{
+    padding: 0.5rem;
+    text-align: left;
+}
+.log input{
+    margin-right: 0.5rem;
+}
+.form button{
+    padding: 0.5rem;
+}
+.contactlocphonmail{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.locphonmailform{
+    display: flex;
+    justify-content: center;
+}
+.contactlocphonmail p{
+padding: 1rem;
+}
+
 @media screen and (max-width: 576px) {
     .mobileremove{
         display: none;
@@ -69,7 +135,9 @@
     .imgband{
         width: 95%;
     }
-
+.alltheband{
+    flex-direction: column;
+}
 }
 .emplacements h4{
     background-color: black;
@@ -81,9 +149,42 @@
     .mobilestay{
         display: none;
     }
+    .papadesemplacements{
+        display: flex;
+        justify-content: space-around;
+    }
+    .emplacements{
+        padding: 1rem;
+
+    }
     .alltheband{
         align-items: center;
-        justify-content: center;
+        justify-content: space-around;
         width: 90%;
+
+    }
+    .desktopremove{
+        display: none;
+    }
+    .log{
+        display: flex;
+        width: 40%;
+        justify-content: space-between;
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+    }
+    .bouton button{
+        display: flex;
+        background-color: black;
+        color: white;
+        width: fit-content;
+        margin-top: 0.5rem;
+    }
+    .bouton{
+        display: flex;
+        justify-content: flex-end;
+    }
+    .message input{
+        width: 100%;
     }
 }
