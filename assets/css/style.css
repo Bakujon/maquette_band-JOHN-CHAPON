@@ -1,0 +1,89 @@
+
+@font-face {
+    font-family: "Lato";
+    src: url(../font/Lato-Regular.ttf);
+  }
+  
+*{
+    font-family:"Lato";
+    /* margin: 0;
+    padding: 0; */
+    box-sizing: border-box;
+  }
+  
+
+
+  .desktopmenuHeader{
+    justify-content: space-around;
+    flex-direction: row;
+}
+
+
+
+
+#menuHeader{
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    transition: all 0.5s;
+  
+}
+.imgla{
+    display: flex;
+    background-image: url(../img/la.jpg);
+    height: 30vh;
+    background-position:center ;
+    background-repeat:no-repeat ;
+    background-size: cover;
+    color: white;
+    align-items: flex-end;
+    justify-content: center;
+    text-align: center;
+}
+.alltheband{
+    display: flex;
+}
+#tourdates{
+    background-color: black;
+    color: white;
+}
+.emplacements{
+    background-color: white;
+    color: black;
+    width: fit-content;
+}
+@media screen and (max-width: 576px) {
+    .mobileremove{
+        display: none;
+    }
+    .desktopstay{
+        display: none;
+    }
+    .imgla h2{
+        display: none;
+    }
+    .imgla p{
+        display: none;
+    }
+    .imgband{
+        width: 95%;
+    }
+
+}
+.emplacements h4{
+    background-color: black;
+    color: white;
+    width: fit-content;
+    padding: 0.5rem;
+}
+@media screen and (min-width: 576px) {
+    .mobilestay{
+        display: none;
+    }
+    .alltheband{
+        align-items: center;
+        justify-content: center;
+        width: 90%;
+    }
+}
