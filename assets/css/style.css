@@ -58,23 +58,53 @@ padding: 1rem;
 .placesrestantes{
     display: flex;
     flex-direction: column;
+    overflow: hidden;
 }
 .soldout{
     float: right;
 }
 .number{
     float: right;
-
+    margin-right: 1rem;
+    border-radius: 200px 200px 200px 200px;
+    -webkit-border-radius: 200px 200px 200px 200px;
+    -moz-border-radius: 200px 200px 200px 200px;
+    border: black 3px solid;
+    background-color: black;
+    color: white;
+}
+.month{
+    padding: 1rem;
 }
 #tourdates ul{
 background-color: rgb(255, 255, 255);
 color: black;
 display: flex;
 }
+#theband h2{
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+}
+.imgband h3{
+    margin-bottom: 1rem;
+}
+#theband p{
+    margin-bottom: 1rem;
+}
+.papadesemplacements{
+    padding: 2rem;
+}
+.blackk{
+    padding-top: 3rem;
+    padding-bottom: 2rem;
 
-
-
-
+}
+.sold{
+    color: white;
+    background-color: red;
+    padding: 0.5rem;
+    
+}
 .txtmobile{
     margin-top: 10rem;
 display: flex;
@@ -102,6 +132,7 @@ justify-content: center;
 }
 .log input{
     margin-right: 0.5rem;
+    /* width: 100%; */
 }
 .form button{
     padding: 0.5rem;
@@ -110,6 +141,7 @@ justify-content: center;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+    align-items: baseline;
 }
 .locphonmailform{
     display: flex;
@@ -118,7 +150,6 @@ justify-content: center;
 .contactlocphonmail p{
 padding: 1rem;
 }
-
 @media screen and (max-width: 576px) {
     .mobileremove{
         display: none;
@@ -168,7 +199,7 @@ padding: 1rem;
     }
     .log{
         display: flex;
-        width: 40%;
+        width: 45%;
         justify-content: space-between;
         margin-top: 2rem;
         margin-bottom: 1rem;
@@ -186,5 +217,11 @@ padding: 1rem;
     }
     .message input{
         width: 100%;
+    }
+    #theband, #tourdates, #contact{
+        padding: 10%;
+    }
+    .imgla{
+        height: 50vh;
     }
 }
